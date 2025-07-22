@@ -33,14 +33,27 @@ checkAge("Josh", 30);
 // Exercise 3 section
 
 function whichQuadrant(x, y) {
-  if (x < 0 && y > 0) {
+  if (x > 0 && y > 0) {
+    console.log("this point lies in Quadrant 1");
+  } else if (x < 0 && y > 0) {
     console.log("this point lies in Quadrant 2");
   } else if (x < 0 && y < 0) {
     console.log("this point lies in Quadrant 3");
+  } else if (x > 0 && y < 0) {
+    console.log("this point lies in Quadrant 4");
   }
 }
 
-whichQuadrant(-2, -10);
+function whichAxis(x, y) {
+  if (x === 0 && y !== 0) {
+    console.log("this point lies on the Y-axis");
+  } else if (x !== 0 && y === 0) {
+    console.log("this point lies on the X-axis");
+  }
+}
+
+whichQuadrant(2, -10);
+whichAxis(5, 0);
 
 // Exercise 4 section
 
